@@ -1,0 +1,328 @@
+/*=====Color Codes=====
+  #FB8500 orange
+  #FF9F1C middle orange
+  #FFBF69 light orange
+  #FEFAE0 off white
+  #FFFFFF white
+  #462920 dark brown
+  #5A3828 brown
+*/
+
+body {
+    background-color: #FB8500;
+}
+
+/*=====Text Settings=====*/
+p {
+    color: #462920;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 1px 1px 1px #5A3828;
+    letter-spacing: 1px;
+}
+  
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #FB8500;
+    text-shadow: 3px 3px 6px #5A3828;
+    letter-spacing: 2px;
+}
+    
+h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #462920;
+    text-shadow: 3px 3px 6px #5A3828;
+    letter-spacing: 2px;
+}
+  
+h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #FEFAE0;
+    text-shadow: 0.5px 0.5px 1px #462920;
+    letter-spacing: 2px;
+}
+  
+h4 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #5A3828;
+    text-shadow: 0.5px 0.5px 0px #462920;
+    letter-spacing: 2px;
+}
+
+/*=====Grid Settings=====*/
+.grid.container {
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 2fr) 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding-right: 50px;
+    padding-left: 50px;
+    height: 100%;
+    background-image: none;
+}
+    
+/*=====Navigation bar=====*/
+nav { 
+    grid-area: 1 / 1 / 2 / 6; 
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FEFAE0;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: #FB8500;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px #FFBF69;
+}
+  
+li a:hover {
+    background-color: #FB8500;
+    color: #FEFAE0;
+    text-shadow: 1px 1px 1px #FFFFFF;
+}
+
+/*=====Carousel=====*/
+.carousel { 
+    grid-area: 2 / 1 / 3 / 6; 
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    vertical-align: middle;
+    border : 15px solid #462920;
+    border-radius: 5px;
+}
+
+img:hover {
+    border : 15px solid #FEFAE0;
+    border-radius: 5px;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: 30px;
+}
+
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #FB8500;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #FB8500;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/*=====Header=====*/
+header { 
+    grid-area: 3 / 1 / 4 / 6; 
+    text-align: center;
+    background-image: url("img/zzz-movie-collage-80s-movie-collage.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #FFBF69;
+    background-blend-mode: screen;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+}
+
+/*=====Left Column=====*/
+.left { 
+    grid-area: 4 / 2 / 5 / 3; 
+    text-align: center;
+    margin: 25px;
+}
+
+.left img {
+    border: 10px solid #462920;
+    border-radius: 5px;
+}
+
+.left img:hover {
+    border: 10px solid #FEFAE0;
+    border-radius: 5px;
+}
+
+
+/*=====Middle Column=====*/
+.middle { 
+    grid-area: 4 / 3 / 5 / 4; 
+    text-align: center;
+    margin: 25px;
+}
+
+.middle img {
+    border: 10px solid #462920;
+    border-radius: 5px;
+}
+
+.middle img:hover {
+    border: 10px solid #FEFAE0;
+    border-radius: 5px;
+}
+
+
+/*=====Right Column=====*/
+.right { 
+    grid-area: 4 / 4 / 5 / 5; 
+    text-align: center;
+    margin: 25px;
+}
+
+.right img {
+    border: 10px solid #462920;
+    border-radius: 5px;
+}
+
+.right img:hover {
+    border: 10px solid #FEFAE0;
+    border-radius: 5px;
+}
+
+/*=====Footer=====*/
+footer { 
+    grid-area: 5 / 1 / 6 / 6; 
+    background-color: #FEFAE0;
+    padding: 10px;
+    text-align: center;
+}
+
+/*=====Body=====*/
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+/*=====Submission Guide=====*/
+ol.reviewtuto {
+    list-style-type: decimal;
+  
+    color: #462920;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px #5A3828;
+    text-align: center;
+}
+ 
+/*=====Submission Form=====*/
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #462920;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #FEFAE0;
+}
+  
+input[type=submit] {
+    width: 100%;
+    background-color: #FFBF69;
+    color: #462920;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px #5A3828;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover {
+    background-color: #FEFAE0;
+    color: #FB8500;
+}
+  
+label[for=revhead] {
+    color: #462920;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px #5A3828;
+}
+  
+/*=====Site Direction Button=====*/
+.directionbutton {
+    background-color: #FFBF69;
+    height: 50px;
+    width: 325px;
+    text-decoration: none;
+    display: inline-block;
+    color: #462920;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 5px #5A3828;
+    border-radius: 15px; 
+}
+
+.directionbutton.reviewsub {
+    margin-top: 150px;
+}
+  
+.directionbutton:hover {
+    background-color: #FEFAE0;
+    color: #FB8500;
+}
+  
+.directionbutton a {
+    color: #462920;
+}
+
+
+
+
+
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }

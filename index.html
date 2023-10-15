@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href ="style.css">
+</head>
+<body>
+
+    <main class="grid container">
+        <!--======Navigation Bar=====-->
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="movies.html">MOVIES</a></li>
+                <li><a href="actors.html">ACTORS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </nav>
+
+        <!--======Carousel=====-->
+        <section class="carousel">
+            <section class="slideshow-container">
+            
+            <article class="mySlides fade">
+                <a href="pussinboots.html">
+                    <img src="img/wide-movie-poster/Puss-In-Boots-The-Last-Wish-Poster.avif" width="1000px" height="400px">
+                </a>
+            </article>
+            
+            <article class="mySlides fade">
+                <a href="spiderman.html">
+                    <img src="img/wide-movie-poster/spiderverseextendedposter.avif" width="1000px" height="400px">
+                </a>
+            </article>
+            
+            <article class="mySlides fade">
+                <a href="supermario.html">
+                    <img src="img/wide-movie-poster/super_mario_bros_movie_new_wider_poster__by_beny2000_dfp0n2a-fullview.jpg" width="1000px" height="400px">
+                </a>
+            </article>
+            
+            </section>
+            <br>
+            
+            <article style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </article>
+            
+            <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+            </script>
+        </section>
+
+        <!--======Header=====-->
+        <header>
+            <h1>Orange Movie Tree</h1>
+            <img src="img/zzz-movie-website-logo.png">
+        </header>
+
+        <!--======Left Column=====-->
+        <section class="left">
+            <h2>Puss in Boots: The Last Wish</h2>
+            <a href="pussinboots.html">
+              <img src="img/movie-poster/large_puss-in-boots-movie-poster-2022.webp" alt="puss-in-boots" height="375" width="250">
+            </a>
+            <p>Puss discovers that his passion for adventure has taken its toll and that he has used up eight of his nine lives. He sets out on an epic journey in search of the mythical Last Wish to regain his past lives.</p>
+            
+            <h2>The Equalizer 3</h2>
+            <a href="">
+              <img src="img/movie-poster/The-Equalizer-3-Poster-2.webp" alt="the-equalizer-3" height="375" width="250">
+            </a>
+            <p>After quitting his job as a government assassin, Robert McCall (Denzel Washington) finds it difficult to come to terms with the horrific things he has done in the past.</p>
+            
+            <h2>The Nun 2</h2>
+            <a href="">
+              <img src="img/movie-poster/the-nun-2-movie-poster.webp" alt="the-nun-2" height="375" width="250">
+            </a>
+            <p>The Nun 2, the most successful part of the popular billion-dollar franchise: the Conjuring universe.</p>
+        </section>
+
+        <!--======Middle Column=====-->
+        <section class="middle">
+            <article class="movie">
+                <h2>Spider-Man: Across The Spider-Verse</h2>
+                <a href="spiderman.html">
+                <img src="img/movie-poster/large_spider-man-across-the-spider-verses-movie-poster-2023.webp" alt="spiderman-across-spiderverse" height="375" width="250">
+                </a>
+                <p>Miles Morales returns in the next installment of the Oscar®-winning Spider-Verse saga. This spectacular adventure leads the friendly Spider-Man from Brooklyn straight through the multiverse.</p>
+            </article>
+
+            <article class="movie">
+                <h2>Gran Turismo</h2>
+                <a href="">
+                <img src="img/movie-poster/official-poster-for-gran-turismo-v0-0cj38wvr36db1.webp" alt="gran-turismo" height="375" width="250">
+                </a>
+                <p>The ultimate success story about Jann Mardenborough, as a teenager he won a series of Nissan competitions with his Gran Turismo gaming skills and became a real professional racing driver.</p>
+            </article>
+
+            <article class="movie">
+                <h2>Talk To Me</h2>
+                <a href="">
+                <img src="img/movie-poster/talk-to-me-movie-poster.webp" alt="talk-to-me" height="375" width="250">
+                </a>
+                <p>A group of friends become addicted to summoning spirits through a mysterious embalmed hand. Until one of them goes too far and all hell breaks loose on earth.</p>
+            </article>
+        </section>
+
+        <!--======Right Column=====-->
+        <section class="right">
+            <h2>The Super Mario Bros Movie</h2>
+            <a href="supermario.html">
+             <img src="img/movie-poster/super-mario-bros-movie-poster.webp" alt="super-mario" height="375" width="250">
+            </a>
+            <p>Illumination and Nintendo, two world-renowned names in the entertainment industry, join forces for the first time for THE SUPER MARIO BROS. MOVIE, a new cinema film about one of the most famous plumbers in pop culture.</p>
+            
+            <h2>Meg 2: The Trench</h2>
+            <a href="">
+              <img src="img/movie-poster/the-meg-2-movie-poster.webp" alt="the-meg-2" height="375" width="250">
+            </a>
+            <p>As Jason Statham and Wu Jing explore the ocean depths with their research team, things go out of control when they are endangered by a mining company. They are pushed to their limits.</p>
+            
+            <h2>Insidious: The Red Door</h2>
+            <a href="">
+              <img src="img/movie-poster/insidious-the-red-foor-movie-poster.webp" alt="insidious-red-door" height="375" width="250">
+              </a>
+            <p>Insidious: The Red Door sees the original cast of the horror franchise return for the final installment of the Lambert family's gruesome saga. To get rid of their demons for good, Josh and the now studying Dalton have to go deeper than ever into the Beyond.</p>
+        </section>
+
+        <!--======Footer=====-->
+        <footer>
+            <p>Take a look at our movies at the <a href="movies.html">Movie Page</a></p>
+            <p>Learn about the creator at the <a href="about.html">About Page</a></p>
+            <p>Learn about the actors at the <a href="actors.html">Actor Page</a></p>
+            <p>Submit a movie at the <a href="moviesubmission.html">Movie Submission Page</a></p>
+            <p>Write and view reviews at the <a href="reviews.html">Review Page</a></p>
+        </footer>
+    </main>
+
+</body>
+</html>

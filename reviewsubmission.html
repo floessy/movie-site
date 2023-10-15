@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href ="style.css">
+</head>
+<body>
+
+    <main class="grid container">
+        <!--======Navigation Bar=====-->
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="movies.html">MOVIES</a></li>
+                <li><a href="actors.html">ACTORS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </nav>
+
+        <!--======Header=====-->
+        <header>
+            <h1>Orange Movie Tree</h1>
+            <img src="img/zzz-movie-website-logo.png">
+        </header>
+
+        <!--======Left Column=====-->
+        <section class="left">
+            <h2>How to write and submit your review:</h2>
+            <ol class="reviewtuto">
+                <li>First You need to select a movie you want to add a review to.</li>
+                <p></p>
+                <li>When You have selected your movie, you need to give it a rating from 1/10 to 10/10.</li>
+                <p></p>
+                <li>After the rating you can write your review (give it a header).</li>
+                <p></p>
+                <li>At last, when You are done with Your review, You need to click on the submit button to submit your review to our website.</li>
+            </ol>
+        </section>
+
+        <!--======Middle Column=====-->
+        <section class="middle">
+            <h2>Write your review here:</h2>
+            <form action="reviewsubconfirm.html">
+              <label for="revhead">Movie</label>
+              <select id="revmovie" name="revmovie">
+                <option value="spiderman">Spider-Man: Across The Spider Verse</option>
+                <option value="pussinboots">Puss in Boots: The Last Wish</option>
+                <option value="supermario">The Super Mario Bros Movie</option>
+              </select>
+    
+              <form action="reviewsubconfirm.html">
+                <label for="revhead">Rating</label>
+                <select id="revrating" name="revrating">
+                  <option value="revone">1/10</option>
+                  <option value="revtwo">2/10</option>
+                  <option value="revthree">3/10</option>
+                  <option value="revfour">4/10</option>
+                  <option value="revfive">5/10</option>
+                  <option value="revsix">6/10</option>
+                  <option value="revseven">7/10</option>
+                  <option value="reveight">8/10</option>
+                  <option value="revnine">9/10</option>
+                  <option value="revten">10/10</option>
+                </select>
+    
+              <label for="revhead">Title:</label>
+              <input type="text" id="rtitle" name="revtitle" placeholder="Title...">
+          
+              <label for="revhead">Description:</label>
+              <input type="text" id="rdesc" name="revdescription" placeholder="Description...">
+            
+              <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <!--======Right Column=====-->
+        <section class="right">
+            <h2>Review Submission Example:</h2>
+            <img src="img/Schermafbeelding 2023-10-12 205626.png" alt="review-submission-example" height="375" width="300">
+        </section>
+
+        <!--======Footer=====-->
+        <footer>
+            <p>Take a look at our movies at the <a href="movies.html">Movie Page</a></p>
+            <p>Learn about the creator at the <a href="about.html">About Page</a></p>
+            <p>Learn about the actors at the <a href="actors.html">Actor Page</a></p>
+            <p>Submit a movie at the <a href="moviesubmission.html">Movie Submission Page</a></p>
+            <p>Write and view reviews at the <a href="reviews.html">Review Page</a></p>
+        </footer>
+    </main>
+
+</body>
+</html>
